@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<h1>Funções</h1>
+
+<button onclick="fazerBolo('Chocolate')">
+    Quero o bolo de Chocolate
+</button>
+
+<button onclick="fazerBolo('Laranja')">
+    Quero o bolo de Laranja
+</button>
+
+<button onclick="fazerBolo('Morango')">
+    Quero o bolo de Morango
+</button>
+
+<script>
+
+    // function fazerBoloChocolate() {
+    //     document.write('Aqui está seu bolo de Chocolate... <br>')
+    // }
+
+    // function fazerBoloLaranja() {
+    //     document.write('Aqui está seu bolo de Laranja... <br>')
+    // }
+
+    // function fazerBoloMorango() {
+    //     document.write('Aqui está seu bolo de Morango... <br>')
+    // }
+
+    function fazerBolo(sabor) {
+        document.write(`Aqui está seu bolo de ${sabor}...`)
+    }
+
+    // Função com Retorno
+    function getNomeCompleto(nome, sobrenome)
+    {
+        var nome_completo = nome + " " + sobrenome
+        return nome_completo
+    }
+
+    // retorno da função é guardado na variável "resultado"
+    var resultado = getNomeCompleto('Adriana', 'Fonseca')
+    console.log(resultado)
+
+    // retorno da função usado dentro de outra função
+    alert(getNomeCompleto('Henrique', 'Gomes'))
+
+
+</script>

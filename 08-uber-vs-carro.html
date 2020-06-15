@@ -1,13 +1,15 @@
 <meta charset="utf-8">
 <h1>Uber vs Carro</h1>
 
+<script src="javascript/pegaNumero.js"></script>
+
 <h2>Carro</h2>
 <script>
 
-    var distancia = parseFloat(prompt('Informe a distância em KM:').replace(',', '.'))
-    var autonomia = parseFloat(prompt('Informe a autonomia (KM/litro):').replace(',', '.'))
-    var preco_gasolina = parseFloat(prompt('Informe o preço da gasolina:').replace(',', '.'))
-    var preco_estacionamento = parseFloat(prompt('Informe o preço do estacionamento:').replace(',', '.'))
+    var distancia = pegaFloat('Informe a distância em KM:')
+    var autonomia = pegaFloat('Informe a autonomia (KM/litro):')
+    var preco_gasolina = pegaFloat('Informe o preço da gasolina:')
+    var preco_estacionamento = pegaFloat('Informe o preço do estacionamento:')
 
     var gasto_gasolina = distancia / autonomia * preco_gasolina
     var total_carro = gasto_gasolina + preco_estacionamento
