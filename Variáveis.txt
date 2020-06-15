@@ -1,0 +1,24 @@
+Variável: é um espaço na memória que guarda uma informação específica simples (nome, preço, idade, etc)
+
+Nome de variáveis precisam seguir as seguintes regras:
+    a) Pode ter letras e números [a-z0-9]
+    b) Números não podem ser o primeiro caracter do nome da variável 
+    c) Pode ter os caracteres especiais _ (underscore) ou cifrão ($)
+
+
+
+Nomes válidos de variáveis:
+    a) anoAtual
+    b) anoatual 
+    c) $anoatual 
+    d) ano_atual
+    e) $ano_atual 
+    f) ano_atual1
+    g) AnoAtual 
+
+Nomes inválidos:
+    a) ano atual 
+    b) ano-atual 
+    c) 1anoatual
+    d) %anoAtual 
+    

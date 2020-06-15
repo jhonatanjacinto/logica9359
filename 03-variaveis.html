@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<h1>Média das Idades</h1>
+<script>
+
+    /* 
+        João nasceu em 1998
+        Maria nasceu em 1983
+        Paulo nasceu em 1975
+    */
+   var ano_atual = new Date().getFullYear()
+   var idade_maria = ano_atual - 1983
+   var idade_joao = ano_atual - 1998
+   var idade_paulo = ano_atual - 1975
+   var media = (idade_maria + idade_joao + idade_paulo) / 3
+   // document.write("A média das idades é: " + media.toFixed(1))
+   document.write(`A média das idades é: ${media.toFixed(1)}`)
+
+
+</script>

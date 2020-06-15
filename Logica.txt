@@ -1,0 +1,35 @@
+1- Cálculos
+2- Acessar e Manipular dados em memória
+3- Tomar decisões
+4- Mudar o fluxo do programa (Repetir operações / Looping)
+
+-----------------------------------------------------------------------------------------------
+
+Receita de Pão com Manteiga
+    Do que eu preciso? (Requisitos do Projeto)
+        1) Pão francês
+        2) Manteiga 
+        3) Faca
+        4) Prato (opcional)
+
+    Passo a passo: (Programação)
+        1) Pegar a faca 
+        2) Cortar o pão ao meio 
+        3) Passar a faca na Manteiga
+        4) Colocar a manteiga no pão 
+        5) Fechar o pão 
+        6) FIM
+
+------------------------------------------------------------------------------------------------
+
+JavaScript                      Swift (iOS) / Objective-C
+Java                            R
+C#                              SQL
+Visual Basic                    HTML/CSS
+F#                              Kotlin (Android)
+PHP 
+Python
+Ruby
+Rust 
+Go 
+C/C++

@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<h1>Custo do Carro</h1>
+<script>
+
+    var custo_fabrica = Number(prompt("Digite o custo de fábrica:").replace(',', '.'))
+    var custo_distribuidor = custo_fabrica * 0.28
+    var custo_impostos = custo_fabrica * 0.45
+    var custo_consumidor = custo_fabrica + custo_distribuidor + custo_impostos
+    document.write(`
+        O custo final é: R$ ${custo_consumidor.toFixed(2)}
+    `)
+
+</script>

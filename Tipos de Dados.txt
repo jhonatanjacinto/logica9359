@@ -1,0 +1,17 @@
+Tipos de Dados
+
+    1) Number = números
+        a) Integer (inteiros): 5, -23, 35, 2
+        b) Float (com casas decimais): 5.2368, 7.3, 100.89659
+
+    2) String = textos
+        a) "" aspas duplas
+        b) '' aspas simples
+        c) `` crase (acento grave)
+
+    3) Boolean = verdadeiro/falso
+        a) true (verdadeiro)
+        b) false (falso)
+
+    4) Array = Lista de Informações (Vetor ou Matriz)
+        Indicado pelo uso de colchetes

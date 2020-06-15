@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<h1>Uber vs Carro</h1>
+
+<h2>Carro</h2>
+<script>
+
+    var distancia = parseFloat(prompt('Informe a distância em KM:').replace(',', '.'))
+    var autonomia = parseFloat(prompt('Informe a autonomia (KM/litro):').replace(',', '.'))
+    var preco_gasolina = parseFloat(prompt('Informe o preço da gasolina:').replace(',', '.'))
+    var preco_estacionamento = parseFloat(prompt('Informe o preço do estacionamento:').replace(',', '.'))
+
+    var gasto_gasolina = distancia / autonomia * preco_gasolina
+    var total_carro = gasto_gasolina + preco_estacionamento
+
+    document.write(`
+        Preço da Gasolina: R$ ${preco_gasolina.toFixed(2)} <br>
+        Valor gasto com Gasolina: R$ ${gasto_gasolina.toFixed(2)} <br>
+        Preço do Estacionamento: R$ ${preco_estacionamento.toFixed(2)} <br>
+        Total da Viagem com Carro: R$ ${total_carro.toFixed(2)}
+    `)
+
+</script>
+
+<h2>Uber</h2>
+<script>
+
+    const preco_base = 2.75
+    const velocidade_media = 25
+    var gasto_km_rodados = distancia * 1.40
+    var tempo_em_minutos = distancia / velocidade_media * 60
+    var gasto_tempo_viagem = tempo_em_minutos * 0.26
+    var total_uber = gasto_km_rodados + gasto_tempo_viagem + preco_base
+    document.write(`Total da Viagem com Uber: R$ ${total_uber.toFixed(2)}`)
+
+</script>
