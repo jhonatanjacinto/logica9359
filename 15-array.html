@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<h1>Arrays</h1>
+
+<script>
+
+    var lista = ["Arroz", "Feijão", "Batata", "Óleo", "Macarrão"]
+    
+    alert(`O primeiro item da lista é: ${ lista[0] }`) // Arroz
+    alert(`O último item da lista é: ${ lista[4] }`) // Macarrão
+
+    // length: propriedade que retorna a quantidade de itens presentes num array
+    document.write(`
+        A sua lista de supermercado tem ${lista.length} item(ns). Eles são: <br>
+        <ol>
+            <li>
+                ${lista.join('</li><li>')}
+            </li>
+        </ol>
+    `)
+
+</script>

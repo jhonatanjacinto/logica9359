@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<h1>Planos de Viagem</h1>
+
+<script src="javascript/pegaNumero.js"></script>
+
+<script>
+
+    var idade = pegaInt('Digite sua idade:')
+
+    if (idade >= 12 && idade <= 17) {
+        document.write('O seu plano é o TEEN! ')
+    }
+    else if (idade >= 18 && idade <= 29) {
+        document.write('O seu plano é o PROFESSIONAL! ')
+    }
+    else if (idade >= 30) {
+        document.write('O seu plano é o XPERIENCE!')
+    }
+    else {
+        document.write('Não há planos para você!')
+    }
+
+</script>

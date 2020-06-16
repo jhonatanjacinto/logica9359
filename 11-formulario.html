@@ -1,0 +1,65 @@
+<meta charset="utf-8">
+<h1>Academia Caelum | Cadastramento</h1>
+<p>
+    Para realizar seu cadastro, por favor preencha o formulário abaixo:
+</p>
+
+Nome: <br>
+<input type="text" id="campoNome">
+<br><br>
+
+Peso: <br>
+<input type="text" id="campoPeso">
+<br><br>
+
+Altura: <br>
+<input type="text" id="campoAltura">
+<br><br>
+
+Data de Nascimento: <br>
+<input type="text" id="campoDataNascimento">
+<br><br>
+
+<input type="checkbox" id="campoSouCardiaco"> Tenho problemas cardíacos
+<br><br>
+
+<button onclick="cadastrar()">
+    Cadastrar
+</button>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
+
+<script>
+
+    flatpickr(campoDataNascimento, { locale: 'pt', dateFormat: 'd/m/Y' })
+
+    function cadastrar()
+    {
+        var nome = campoNome.value
+        var altura = campoAltura.value 
+        var peso = campoPeso.value 
+        var dataNascimento = campoDataNascimento.value
+        var souCardiaco = campoSouCardiaco.checked // retorna true ou false
+        var frase
+
+        if (souCardiaco) {
+            frase = "PRECISA DE ACOMPANHAMENTO MÉDICO"
+        }
+        else {
+            frase = "NÃO PRECISA DE ACOMPANHEMENTO MÉDICO"
+        }
+
+        document.write(`
+            <h2>Seus dados cadastrais são: </h2>
+            Nome: ${nome} <br>
+            Peso: ${peso} kg <br>
+            Altura: ${altura} m <br>
+            Data de Nascimento: ${dataNascimento} <br>
+            ${frase}
+        `)
+    }
+
+</script>
+

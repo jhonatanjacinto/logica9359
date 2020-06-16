@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<h1>Tabuada</h1>
+
+<script src="javascript/pegaNumero.js"></script>
+
+<script>
+
+    var numero = pegaInt('Qual tabuada você quer ver?')
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+        var resultado = numero * multiplicador
+        document.write(`${numero} x ${multiplicador} = ${resultado} <br>`)
+    }
+
+</script>

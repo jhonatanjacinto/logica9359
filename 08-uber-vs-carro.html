@@ -2,6 +2,7 @@
 <h1>Uber vs Carro</h1>
 
 <script src="javascript/pegaNumero.js"></script>
+<script src="javascript/formataMoeda.js"></script>
 
 <h2>Carro</h2>
 <script>
@@ -15,10 +16,10 @@
     var total_carro = gasto_gasolina + preco_estacionamento
 
     document.write(`
-        Preço da Gasolina: R$ ${preco_gasolina.toFixed(2)} <br>
-        Valor gasto com Gasolina: R$ ${gasto_gasolina.toFixed(2)} <br>
-        Preço do Estacionamento: R$ ${preco_estacionamento.toFixed(2)} <br>
-        Total da Viagem com Carro: R$ ${total_carro.toFixed(2)}
+        Preço da Gasolina: ${formataMoeda(preco_gasolina)} <br>
+        Valor gasto com Gasolina: ${formataMoeda(gasto_gasolina)} <br>
+        Preço do Estacionamento: ${formataMoeda(preco_estacionamento)} <br>
+        Total da Viagem com Carro: ${formataMoeda(total_carro)}
     `)
 
 </script>
@@ -32,6 +33,6 @@
     var tempo_em_minutos = distancia / velocidade_media * 60
     var gasto_tempo_viagem = tempo_em_minutos * 0.26
     var total_uber = gasto_km_rodados + gasto_tempo_viagem + preco_base
-    document.write(`Total da Viagem com Uber: R$ ${total_uber.toFixed(2)}`)
+    document.write(`Total da Viagem com Uber: ${formataMoeda(total_uber)}`)
 
 </script>

@@ -1,0 +1,24 @@
+  
+Pedir o nome de 2 times e o número de gols marcados na partida (para cada time). Exibir o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
+
+---------------------------------------------------------
+
+Do que eu preciso:
+    a) Nome do Primeiro time 
+    b) Quantidade de gols do primeiro time 
+    c) Nome do Segundo Time 
+    d) Quantidade de gols do segundo time 
+
+Passo a passo:
+    1) Pedir o nome do primeiro time 
+    2) Pedir a quantidade de gols do primeiro time 
+    3) Pedir o nome do segundo time 
+    4) Pedir a quantidade de gols do segundo time 
+    5) SE gols do time 1 for MAIOR que gols do time 2
+        Exibir o nome do TIME 1
+    6) SE gols do time 1 for IGUAL a gols do time 2
+        Exibir EMPATE 
+    7) Se gols do time 2 for MAIOR que gols do time 1
+        Exibir o nome do TIME 2
+
+

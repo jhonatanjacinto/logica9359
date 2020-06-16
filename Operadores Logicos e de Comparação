@@ -1,0 +1,24 @@
+Operadores de Comparação e Atribuição
+
+    == (igualdade)
+    === (igualdade restritiva)
+    != (diferença)
+    !== (diferença restritiva)
+    > (maior que)
+    < (menor que)
+    >= (maior ou igual a)
+    <= (menor ou igual a)
+
+    = (atribuição)
+    += (atribuição por soma)
+    -= (atribuição por subtração)
+    *= (atribuição por multiplicação)
+    /= (atribuição por divisão)
+
+
+
+Operadores Lógicos
+
+    && (E)
+    || (Ou)
+    ! (Não / Negação)

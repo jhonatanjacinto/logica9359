@@ -1,6 +1,6 @@
 function pegaFloat(mensagem)
 {
-    return parseFloat(prompt(mensagem).replace(',', '.'))
+    return parseFloat(prompt(mensagem).replace(/(R\$ |\.)/g, '').replace(',', '.'))
 }
 
 function pegaInt(mensagem)
