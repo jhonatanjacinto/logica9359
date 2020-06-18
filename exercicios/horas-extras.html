@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<h1>Horas extras</h1>
+
+<script src="../javascript/pegaNumero.js"></script>
+<script src="../javascript/formataMoeda.js"></script>
+
+<script>
+
+    var horas_trabalhadas = pegaInt("Informe o número de horas trabalhadas no mês:")
+    var valor_hora = pegaFloat("Informe o valor da hora trabalhada:")
+
+    if (horas_trabalhadas > 160) {
+        // tem hora extra
+        var valor_percentual_hora_extra = valor_hora / 2
+        var valor_hora_extra = valor_percentual_hora_extra + valor_hora
+        var horas_extras = horas_trabalhadas - 160
+        var salario = (160 * valor_hora) + (horas_extras * valor_hora_extra)
+    }
+    else {
+        // não tem hora extra
+        var salario = horas_trabalhadas * valor_hora
+    }
+
+    document.write(`<b>O seu salário é:</b> ${formataMoeda(salario)}`)
+
+
+</script>

@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<h1>Desconto Produto</h1>
+
+<script src="../javascript/pegaNumero.js"></script>
+<script src="../javascript/formataMoeda.js"></script>
+
+<script>
+
+    var nome_produto = prompt("Informe o nome do produto:")
+    var quantidade = pegaInt("Informe a quantidade do produto:")
+    var preco_unitario = pegaFloat("Informe o preço do produto:")
+    var total = quantidade * preco_unitario
+    var desconto = 0
+
+    if (quantidade <= 5) {
+        // desconto de 2%
+        desconto = total * 0.02
+    }
+    else if (quantidade > 5 && quantidade <= 10) {
+        // desconto de 3%
+        desconto = total * 0.03
+    }
+    else {
+        // desconto de 5%
+        desconto = total * 0.05
+    }
+
+    var total_pagar = total - desconto
+
+    document.write(`
+        Produto: ${nome_produto} <br>
+        Quantidade: ${quantidade} <br>
+        Preço Unitário: ${formataMoeda(preco_unitario)} <br>
+        Total sem desconto: ${formataMoeda(total)} <br>
+        Valor do Desconto: ${formataMoeda(desconto)} <br>
+        Total com desconto: ${formataMoeda(total_pagar)}
+    `)
+
+</script>

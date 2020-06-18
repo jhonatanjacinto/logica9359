@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<h1>Notas dos alunos</h1>
+
+<script src="../javascript/pegaNumero.js"></script>
+<script>
+
+    var qtd_alunos = pegaInt('Informe a quantidade de alunos:')
+
+    for (var a = 1; a <= qtd_alunos; a++)
+    {
+        var nome_aluno = prompt(`Informe o nome do ${a}º aluno:`)
+        alert(`Agora informe as notas do aluno: ${nome_aluno}`)
+        var total_notas = 0
+
+        for (var n = 1; n <= 3; n++) {
+            var nota = pegaFloat(`Informe a ${n}ª nota:`)
+            total_notas += nota
+        }
+
+        var media = total_notas / 3
+        document.write(`A média do aluno ${nome_aluno} é: ${media.toFixed(1)} <br>`)
+    }
+
+</script>

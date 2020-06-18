@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<h1>Aposentadoria</h1>
+
+<script src="../javascript/pegaNumero.js"></script>
+
+<script>
+
+    var ano_nascimento = pegaInt('Informe o ano de nascimento:')
+    var ano_ingresso_empresa = pegaInt('Informe o ano de ingresso na empresa:')
+    var ano_atual = new Date().getFullYear()
+
+    var idade = ano_atual - ano_nascimento
+    var anos_trabalhados = ano_atual - ano_ingresso_empresa
+
+    /* 
+        OU o cara tem que ter no mínimo 65 anos
+        OU ter trabalhado no mínimo 30
+        OU ter ao mesmo tempo no mínimo 60 E ter trabalho no mínimo 25
+    */
+    if (idade >= 65 || anos_trabalhados >= 30 || (idade >= 60 && anos_trabalhados >= 25)) {
+        var frase = "REQUER APOSENTADORIA"
+    }
+    else {
+        var frase = "NÃO REQUER APOSENTADORIA"
+    }
+
+    document.write(`
+        Idade: ${idade} anos <br>
+        Anos trabalhados: ${anos_trabalhados} anos <br>
+        ${frase}
+    `)
+
+</script>
